@@ -63,24 +63,46 @@ header {
     border-bottom-left-radius: 130px;
     background-color: @light-blue;
 
-    .buttons {
-        display: flex;
-        flex-direction: row;
-    }
-
     h2 {
         padding: 20px 0;
         color: @dark-blue;
         font-size: 3rem;
     }
 
-    img {
-        height: 50px;
-        width: auto;
-        margin: 0 30px;
-        padding-bottom: 20px;
+    .buttons {
+        display: flex;
+        flex-direction: row;
 
+        img {
+            height: 50px;
+            width: auto;
+            margin: 0 30px;
+            padding-bottom: 20px;
+    
+        }
+
+        .hidden{ 
+            visibility: hidden;
+          }
+          .hidden-btn:hover .hidden{
+            visibility: visible;
+          }
+          .hidden-btn:hover .always-shown{
+            visibility: hidden;
+          }
+
+          .hidden-btn {
+              position: relative;
+              text-align: center;
+              
+              a {
+                  font-size: 1.6rem;
+                  position: absolute;
+                  top: 15px;
+                  left: 25%;
+                  color: black;
+                  font-weight: bold;
+              }
+          }
     }
-
-
 }

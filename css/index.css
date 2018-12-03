@@ -197,18 +197,39 @@ header .self-pic {
   border-bottom-left-radius: 130px;
   background-color: #d6f3ff;
 }
-.contact .buttons {
-  display: flex;
-  flex-direction: row;
-}
 .contact h2 {
   padding: 20px 0;
   color: #0274B3;
   font-size: 3rem;
 }
-.contact img {
+.contact .buttons {
+  display: flex;
+  flex-direction: row;
+}
+.contact .buttons img {
   height: 50px;
   width: auto;
   margin: 0 30px;
   padding-bottom: 20px;
+}
+.contact .buttons .hidden {
+  visibility: hidden;
+}
+.contact .buttons .hidden-btn:hover .hidden {
+  visibility: visible;
+}
+.contact .buttons .hidden-btn:hover .always-shown {
+  visibility: hidden;
+}
+.contact .buttons .hidden-btn {
+  position: relative;
+  text-align: center;
+}
+.contact .buttons .hidden-btn a {
+  font-size: 1.6rem;
+  position: absolute;
+  top: 15px;
+  left: 25%;
+  color: black;
+  font-weight: bold;
 }
