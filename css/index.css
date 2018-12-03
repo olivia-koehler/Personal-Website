@@ -135,14 +135,9 @@ p {
   font-size: 1.6rem;
   line-height: 1.2;
 }
-h1 {
-  font-size: 3rem;
-  margin: 10px 0;
-}
+h1,
 h2 {
-  font-size: 1.6rem;
-  font-weight: bold;
-  margin: 10px 0;
+  font-size: 3rem;
 }
 .top {
   background-color: #0274B3;
@@ -150,12 +145,8 @@ h2 {
 .second {
   background-color: #d6f3ff;
 }
-button {
-  cursor: pointer;
-  border: 1px solid #d6f3ff;
-}
-button a:hover {
-  color: #0274B3;
+.third {
+  background-color: #0274B3;
 }
 header {
   display: flex;
@@ -163,6 +154,9 @@ header {
   border-top-left-radius: 130px;
   border-bottom-left-radius: 130px;
   background-color: #d6f3ff;
+}
+header h1 {
+  margin-top: 100px;
 }
 header h1 span {
   background-color: #0274B3;
@@ -176,70 +170,45 @@ header .self-pic {
   border-radius: 50%;
   margin: 10px 2%;
 }
-header .header-text {
-  display: flex;
-  flex-direction: column;
-  margin-top: 100px;
-}
-header .header-text img {
-  height: 32px;
-  width: auto;
-}
-header .header-text a {
-  color: black;
-  font-size: 1.6rem;
-  margin-left: 5%;
-}
-header .header-text .links {
+.about {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  color: #d6f3ff;
+  background-color: #0274B3;
+  border-top-right-radius: 130px;
+  border-bottom-right-radius: 130px;
 }
-header .header-text .social-media {
-  display: flex;
-  align-items: center;
-  margin: 20px 2%;
+.about h2 {
+  width: 800px;
+  margin: auto;
+  padding: 20px 0 10px;
+}
+.about p {
+  width: 800px;
+  margin: auto;
+  padding: 0 2% 20px 2%;
 }
 .contact {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #0274B3;
-  border-top-right-radius: 130px;
-  border-bottom-right-radius: 130px;
+  border-top-left-radius: 130px;
+  border-bottom-left-radius: 130px;
+  background-color: #d6f3ff;
 }
 .contact .buttons {
   display: flex;
   flex-direction: row;
 }
 .contact h2 {
-  padding-top: 10px;
-  color: #d6f3ff;
+  padding: 20px 0;
+  color: #0274B3;
   font-size: 3rem;
 }
 .contact img {
-  height: 32px;
+  height: 50px;
   width: auto;
-}
-.contact a {
-  color: black;
-  font-size: 1.6rem;
-  margin-left: 5%;
-  text-decoration: none;
-  font-weight: bold;
-}
-.contact .links {
-  display: flex;
-  justify-content: center;
-}
-.contact .social-media {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  margin: 20px 3%;
-  border-radius: 50%;
-  height: 100px;
-  width: 130px;
-  padding: 0px 10px;
-  background-color: #d6f3ff;
+  margin: 0 30px;
+  padding-bottom: 20px;
 }

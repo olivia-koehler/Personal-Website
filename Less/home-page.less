@@ -1,18 +1,13 @@
 .top {
-    background-color: #0274B3;
+    background-color: @dark-blue;
 }
 
 .second {
-    background-color:@bgd-color;
+    background-color: @light-blue;
 }
 
-button {
-    cursor: pointer;
-    border: 1px solid @bgd-color;
-
-    a:hover {
-        color: #0274B3;
-    }
+.third {
+    background-color: @dark-blue;
 }
 
 header {
@@ -20,48 +15,43 @@ header {
     justify-content: center;
     border-top-left-radius: 130px;
     border-bottom-left-radius: 130px;
-    background-color: @bgd-color;
+    background-color: @light-blue;
     h1 {
+        margin-top: 100px;
         span {
-            background-color: #0274B3;
-            color: @bgd-color;
+            background-color: @dark-blue;
+            color: @light-blue;
             border-radius: 30px;
             padding: 0px 10px;
         }
     }
-
     .self-pic {
         height: 250px;
         width: auto;
         border-radius: 50%;
         margin: 10px 2%;
     }
-    .header-text {
-        display: flex;
-        flex-direction: column;
-        margin-top: 100px;
+}
 
-        img {
-            height: 32px;
-            width: auto;
-        }
+.about {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: @light-blue;
+    background-color: @dark-blue;
+    border-top-right-radius: 130px;
+    border-bottom-right-radius: 130px;
 
-        a {
-            color: black;
-            font-size: 1.6rem;
-            margin-left: 5%;
-        }
+    h2 {
+        width: 800px;
+        margin: auto;
+        padding: 20px 0 10px;
+    }
 
-        .links {
-            display: flex;
-            justify-content: center;
-        }
-
-        .social-media {
-            display: flex;
-            align-items: center;
-            margin: 20px 2%;
-        }
+    p {
+        width: 800px;
+        margin: auto;
+        padding: 0 2% 20px 2%;
     }
 }
 
@@ -69,9 +59,9 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #0274B3;
-    border-top-right-radius: 130px;
-    border-bottom-right-radius: 130px;
+    border-top-left-radius: 130px;
+    border-bottom-left-radius: 130px;
+    background-color: @light-blue;
 
     .buttons {
         display: flex;
@@ -79,39 +69,18 @@ header {
     }
 
     h2 {
-        padding-top: 10px;
-        color: @bgd-color;
+        padding: 20px 0;
+        color: @dark-blue;
         font-size: 3rem;
     }
 
     img {
-        height: 32px;
+        height: 50px;
         width: auto;
+        margin: 0 30px;
+        padding-bottom: 20px;
+
     }
 
-    a {
-        color: black;
-        font-size: 1.6rem;
-        margin-left: 5%;
-        text-decoration: none;
-        font-weight: bold;
-    }
 
-    .links {
-        display: flex;
-        justify-content: center;
-    }
-
-    .social-media {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-        margin: 20px 3%;
-        border-radius: 50%;
-        height: 100px;
-        width: 130px;
-        padding: 0px 10px;
-        background-color: @bgd-color;
-    }
 }
