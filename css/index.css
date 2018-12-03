@@ -148,6 +148,9 @@ h2 {
 .third {
   background-color: #0274B3;
 }
+.fourth {
+  background-color: #d6f3ff;
+}
 @keyframes spin {
   from {
     transform: rotate(0deg);
@@ -159,9 +162,10 @@ h2 {
 header {
   display: flex;
   justify-content: center;
-  border-top-left-radius: 130px;
-  border-bottom-left-radius: 130px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
   background-color: #d6f3ff;
+  margin-left: 2%;
 }
 header h1 {
   margin-top: 100px;
@@ -169,7 +173,7 @@ header h1 {
 header h1 span {
   background-color: #0274B3;
   color: #d6f3ff;
-  border-radius: 30px;
+  border-radius: 10px;
   padding: 0px 10px;
 }
 header .self-pic {
@@ -177,10 +181,6 @@ header .self-pic {
   width: auto;
   border-radius: 50%;
   margin: 10px 2%;
-  animation-name: spin;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
 }
 .about {
   display: flex;
@@ -188,8 +188,9 @@ header .self-pic {
   flex-direction: column;
   color: #d6f3ff;
   background-color: #0274B3;
-  border-top-right-radius: 130px;
-  border-bottom-right-radius: 130px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-right: 2%;
 }
 .about h2 {
   width: 800px;
@@ -201,47 +202,84 @@ header .self-pic {
   margin: auto;
   padding: 0 2% 20px 2%;
 }
-.contact {
+.about ul {
+  font-size: 1.6rem;
+  width: 800px;
+  margin: auto;
+  padding-bottom: 15px;
+}
+.about ul li {
+  padding: 5px 0;
+}
+.about ul span {
+  font-size: 2rem;
+}
+.social-med {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-top-left-radius: 130px;
-  border-bottom-left-radius: 130px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-left: 2%;
   background-color: #d6f3ff;
 }
-.contact h2 {
+.social-med h2 {
   padding: 20px 0;
   color: #0274B3;
   font-size: 3rem;
 }
-.contact .buttons {
+.social-med .buttons {
   display: flex;
   flex-direction: row;
 }
-.contact .buttons img {
+.social-med .buttons img {
   height: 50px;
   width: auto;
   margin: 0 30px;
   padding-bottom: 20px;
 }
-.contact .buttons .hidden {
+.social-med .buttons .hidden {
   visibility: hidden;
 }
-.contact .buttons .hidden-btn:hover .hidden {
+.social-med .buttons .hidden-btn:hover .hidden {
   visibility: visible;
 }
-.contact .buttons .hidden-btn:hover .always-shown {
+.social-med .buttons .hidden-btn:hover .always-shown {
   visibility: hidden;
 }
-.contact .buttons .hidden-btn {
+.social-med .buttons .hidden-btn {
   position: relative;
   text-align: center;
 }
-.contact .buttons .hidden-btn a {
+.social-med .buttons .hidden-btn a {
   font-size: 1.6rem;
   position: absolute;
   top: 15px;
   left: 25%;
   color: black;
   font-weight: bold;
+}
+.contact {
+  background-color: #0274B3;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-right: 2%;
+  color: #d6f3ff;
+}
+.contact h2 {
+  padding-top: 20px;
+  width: 800px;
+  margin: auto;
+}
+.contact p {
+  width: 800px;
+  margin: auto;
+  padding: 10px 0;
+}
+.contact form {
+  width: 800px;
+  margin-left: 23%;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
 }
